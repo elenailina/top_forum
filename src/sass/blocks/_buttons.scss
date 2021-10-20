@@ -1,0 +1,32 @@
+.button {
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    border: none;
+    &_club {
+        width: 153px;
+        height: 38px;
+        background-color: #e8d8b6;
+        font-size: 12px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #323232;
+    }
+    &_register {
+        width: 153px;
+        height: 42px;
+        background-color: #c99c47;
+        font-family: Roboto;
+    }
+    &_more {
+        width: 120px;
+        height: 38px;
+        background-color: #d4c198;
+    }
+    &_subscribe {
+        width: 153px;
+        height: 42px;
+        background-color: #323232;
+    }
+}

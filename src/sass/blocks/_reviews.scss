@@ -1,0 +1,87 @@
+.reviews {
+    min-height: 417px;
+    background-color: rgba(232, 216, 182, 0.9);
+    padding: 54px 0 61px 0;
+    &__title {
+        font-size: 24px;
+        line-height: 24px;
+        font-weight: 500;
+        color: #323232;
+        text-align: center;
+    }
+    &__wrapper {
+        display: flex;
+        margin-top: 40px;
+    }
+    &__slide {
+        display: flex;
+    }
+    &__img {
+        width: 121px;
+        height: 121px;
+        background-color: #ffffff;
+        border-radius: 100%;
+        margin-right: 13px;
+        img {
+            display: block;
+            margin: 0 auto;
+            top: 50%;
+            border-radius: 100%;
+            text-align: center;
+            }
+    }
+    &__about {
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        background: no-repeat url("../icons/review.png") center center;
+        padding: 26px 27px 31px 53px;
+    }
+    &__subtitle {
+        font-size: 17px;
+        line-height: 24px;
+        font-weight: 500;
+        color: #323232;
+    }
+    &__date {
+        width: 119px;
+        height: 29px;
+        background-color: rgba(50, 50, 50, 0.5);
+        font-size: 9px;
+        line-height: 31px;
+        font-weight: 300;
+        color: #ffffff;
+        text-align: center;
+    }
+    &__descr {
+        max-width: 333px;
+        margin-top: 11px;
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 300;
+        color: #323232;
+        text-align: justify;
+    }
+    .prev, .next {
+        position: absolute;
+        top: 114px;
+        left: -37px;
+        border: none;
+        background-color: rgba(255, 255, 255, 0);
+        img {
+            width: 12px;
+            height: 47px;
+            &:hover {
+                border: none;
+                background-color: rgba(255, 255, 255, 0);
+            }
+        }
+    }
+    .next {
+        right: -31px;
+        left: auto;
+        &:hover {
+            border-color: none;
+            }
+        }
+}

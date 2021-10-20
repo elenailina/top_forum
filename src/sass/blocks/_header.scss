@@ -1,0 +1,33 @@
+.header {
+    background-color: #323232;
+    &__wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        min-height: 56px;
+        }
+    &__menu {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 22px;
+        &-item {
+            border-right: 1px solid rgba(250, 250, 250, 0.1);
+            padding-right: 19px;
+            &:last-child {
+                border-right: none;
+            }
+        }
+        a {
+            font-size: 15px;
+            line-height: 24px;
+            font-weight: 300;
+            color: #ffffff;
+        }
+    }
+    &__btn {
+    margin-top: 8px;
+    display: flex;
+    justify-content: flex-end;
+    }
+}
