@@ -19,16 +19,20 @@
 }
 
 .divider {
-    width: 60px;
-    height: 3px;
-    background-color: $main-color;
-    margin: 25px auto 0 auto;
-    
+    width: 1px;
+    height: 210px;
+    background-color: rgba(255, 255, 255, .1);
+    display: block;
+    margin: 0 auto;
 }
 
 @import 'blocks/header';
+@import 'blocks/subheader';
 @import 'blocks/buttons';
 @import 'blocks/promo';
+@import 'blocks/titles';
 @import 'blocks/future';
 @import 'blocks/reviews';
-@import 'blocks/media';
+@import 'blocks/promo-video';
+@import 'blocks/clients';
+@import 'blocks/footer';

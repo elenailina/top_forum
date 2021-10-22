@@ -2,13 +2,6 @@
     min-height: 417px;
     background-color: rgba(232, 216, 182, 0.9);
     padding: 54px 0 61px 0;
-    &__title {
-        font-size: 24px;
-        line-height: 24px;
-        font-weight: 500;
-        color: #323232;
-        text-align: center;
-    }
     &__wrapper {
         display: flex;
         margin-top: 40px;
@@ -25,10 +18,8 @@
         img {
             display: block;
             margin: 0 auto;
-            top: 50%;
             border-radius: 100%;
-            text-align: center;
-            }
+        }
     }
     &__about {
         display: flex;
@@ -71,17 +62,14 @@
         img {
             width: 12px;
             height: 47px;
-            &:hover {
-                border: none;
-                background-color: rgba(255, 255, 255, 0);
-            }
+        }
+        &:focus {
+            outline: none;
         }
     }
     .next {
         right: -31px;
         left: auto;
-        &:hover {
-            border-color: none;
-            }
-        }
+    }
+    
 }

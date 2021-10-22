@@ -1,0 +1,11 @@
+.promo-video {
+    min-height: 591px;
+    padding: 60px 244px;
+    &__video {
+        margin-top: 25px;
+        iframe {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}

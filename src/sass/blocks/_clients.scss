@@ -1,0 +1,40 @@
+.clients {
+    min-height: 287px;
+    padding: 44px 0 70px 0;
+    background-color: rgba(232,216,182, .3);
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__slide {
+        position: relative;
+        margin-top: 33px;
+        width: 180px;
+        height: 123px;
+        background-color: #ffffff;
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;                  
+            transform: translate(-50%, -50%)
+        }
+    }
+    .prev, .next {
+        position: absolute;
+        top: 72px;
+        left: -37px;
+        border: none;
+        background-color: rgba(255, 255, 255, 0);
+        img {
+            width: 12px;
+            height: 47px;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    .next {
+        right: -31px;
+        left: auto;
+    }
+}

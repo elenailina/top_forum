@@ -1,6 +1,7 @@
 .future {
     min-height: 838px;
     padding: 66px 15px 49px 15px;
+    position: relative;
     &__text {
         font-size: 17px;
         line-height: 30px;
@@ -30,19 +31,19 @@
         img {
             display: block;
             margin: 0 auto;
-            &::before {
-                content: '';
-                position: absolute;
-                width: 169px;
-                height: 170px;
-                border: 2px solid #c99c47;
-                border-radius: 100%;
-                top: -39px;
-                left: 50%;
-                -webkit-transform: translateX(-50%);
-                        transform: translateX(-50%);
-                }
-            }
+            position: relative;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            width: 169px;
+            height: 170px;
+            border: 2px solid #c99c47;
+            border-radius: 100%;
+            top: -39px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
     &__title {
         margin-top: 75px;

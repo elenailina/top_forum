@@ -4,6 +4,9 @@
     font-weight: 400;
     color: #ffffff;
     border: none;
+    &:focus {
+        outline: none;
+    }
     &_club {
         width: 153px;
         height: 38px;
