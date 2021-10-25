@@ -1,0 +1,58 @@
+.sponsors {
+    min-height: 1200px;
+    padding: 51px 0 68px 0;
+    font-size: 17px;
+    font-weight: 300;
+    color: #323232;
+    text-align: justify;
+    text-align-last: center;
+    &__descr {
+        margin-top: 22px;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0 117px;
+    }
+    &__item {
+        width: 265px;
+        margin: 65px 14px 0 14px;
+        &_header {
+            font-size: 19px;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: $main-color;
+        }
+        &_img {
+            display: block;
+            margin: 0 auto;
+            margin-top: 21px;
+            position: relative;
+            width: 263px;
+            height: 160px;
+            background-color: #ffffff;
+            border: 1px solid #f3ebda;
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%); 
+            }
+        }
+        &_name {
+            margin-top: 21px;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+        &_text {
+            margin-top: 17px;
+            width: 263px;
+            font-size: 15px;
+        }
+        &_btn {
+            margin-top: 16px;
+        }
+    }
+}

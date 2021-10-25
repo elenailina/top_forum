@@ -27,7 +27,10 @@ $(document).ready(function(){
     });
 });
 
-
+const sponsors = document.querySelector('.sponsors');
+sponsors.addEventListener('click', () => {
+    menu.classList.add('display: block');
+});
 
 const hamburger = document.querySelector('.hamburger'),
            menu = document.querySelector('.menu'),

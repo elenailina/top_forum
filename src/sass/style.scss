@@ -29,10 +29,12 @@
 @import 'blocks/header';
 @import 'blocks/subheader';
 @import 'blocks/buttons';
-@import 'blocks/promo';
+@import 'blocks/index/promo';
 @import 'blocks/titles';
-@import 'blocks/future';
-@import 'blocks/reviews';
-@import 'blocks/promo-video';
-@import 'blocks/clients';
+@import 'blocks/index/future';
+@import 'blocks/index/reviews';
+@import 'blocks/index/promo-video';
+@import 'blocks/index/clients';
+@import 'blocks/sponsors';
+@import 'blocks/exibitors';
 @import 'blocks/footer';
