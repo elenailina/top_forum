@@ -5912,7 +5912,7 @@ header {
 }
 
 .exibitors {
-  min-height: 1200px;
+  min-height: 1098px;
   padding: 51px 0 68px 0;
   font-size: 17px;
   font-weight: 300;
@@ -5932,7 +5932,8 @@ header {
   -ms-grid-columns: (263px)[4];
       grid-template: repeat(2, minmax(320px, auto))/repeat(4, 263px);
   grid-auto-rows: minmax(320px, auto);
-  gap: 72px 21px;
+  -webkit-column-gap: 21px;
+          column-gap: 21px;
 }
 
 .exibitors__item {
@@ -5976,7 +5977,7 @@ header {
 }
 
 .speakers {
-  min-height: 1200px;
+  min-height: 1094px;
   padding: 51px 0 68px 0;
   font-size: 17px;
   font-weight: 300;
@@ -6041,6 +6042,84 @@ header {
 
 .speakers__item_btn {
   margin-top: 16px;
+}
+
+.articles {
+  min-height: 1098px;
+  padding: 51px 0 68px 0;
+  font-size: 17px;
+  font-weight: 300;
+  color: #323232;
+  text-align: justify;
+  text-align-last: center;
+}
+
+.articles__descr {
+  margin-top: 22px;
+}
+
+.articles__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (minmax(326px, auto))[2];
+  -ms-grid-columns: (356px)[3];
+      grid-template: repeat(2, minmax(326px, auto))/repeat(3, 356px);
+  grid-auto-rows: minmax(326px, auto);
+  -webkit-column-gap: 21px;
+          column-gap: 21px;
+}
+
+.articles__item {
+  width: 356px;
+  margin-top: 65px;
+}
+
+.articles__item_img {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  width: 356px;
+  height: 220px;
+  border: 1px solid #f3ebda;
+}
+
+.articles__item_img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 356px;
+  height: 220px;
+}
+
+.articles__item_name {
+  margin-top: 24px;
+}
+
+.articles__item_name a {
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #323232;
+  text-decoration: none;
+}
+
+.articles__item_name a:hover {
+  text-decoration: underline;
+  color: #c99c47;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.articles__item_text {
+  margin-top: 16px;
+  width: 261px;
+  font-size: 15px;
+}
+
+.articles__btn {
+  margin-top: 33px;
 }
 
 .footer {

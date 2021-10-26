@@ -1,4 +1,4 @@
-.exibitors {
+.articles {
     min-height: 1098px;
     padding: 51px 0 68px 0;
     font-size: 17px;
@@ -11,41 +11,51 @@
     }
     &__wrapper {
         display: grid;
-        grid-template: repeat(2, minmax(320px, auto)) / repeat(4, 263px);
-        grid-auto-rows: minmax(320px, auto);
+        grid-template: repeat(2, minmax(326px, auto)) / repeat(3, 356px);
+        grid-auto-rows: minmax(326px, auto);
         column-gap: 21px;
     }
     &__item {
-        width: 263px;
+        width: 356px;
         margin-top: 65px;
         &_img {
             display: block;
             margin: 0 auto;
-            margin-top: 21px;
             position: relative;
-            width: 263px;
-            height: 160px;
-            background-color: #ffffff;
+            width: 356px;
+            height: 220px;
             border: 1px solid #f3ebda;
             img {
                 position: absolute;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%); 
+                width: 356px;
+                height: 220px;
             }
         }
         &_name {
-            margin-top: 21px;
-            font-weight: 500;
-            text-transform: uppercase;
+            margin-top: 24px;
+            a {
+                font-size: 17px;
+                font-weight: 500;
+                text-transform: uppercase;
+                color: #323232;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                    color: $main-color;
+                    transition: 0.3s all;
+                }
+            }
         }
         &_text {
-            margin-top: 17px;
+            margin-top: 16px;
             width: 261px;
             font-size: 15px;
         }
-        &_btn {
-            margin-top: 16px;
-        }
+    }
+    &__btn {
+        margin-top: 33px;
     }
 }
