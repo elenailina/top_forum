@@ -10,10 +10,10 @@
         margin-top: 22px;
     }
     &__wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template: repeat(2, minmax(320px, auto)) / repeat(4, 263px);
+        grid-auto-rows: minmax(320px, auto);
+        gap: 72px 21px;
     }
     &__item {
         width: 263px;
@@ -41,7 +41,7 @@
         }
         &_text {
             margin-top: 17px;
-            width: 263px;
+            width: 261px;
             font-size: 15px;
         }
         &_btn {

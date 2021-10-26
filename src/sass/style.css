@@ -5170,6 +5170,12 @@ template {
   margin: 0 auto;
 }
 
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
 .header {
   background-color: #323232;
 }
@@ -5303,6 +5309,20 @@ template {
   height: 146px;
 }
 
+.subheader {
+  min-height: 95px;
+  background-color: #fff;
+  position: relative;
+}
+
+.subheader::after {
+  content: '';
+  position: absolute;
+  width: 1920px;
+  height: 1px;
+  background-color: rgba(50, 50, 50, 0.2);
+}
+
 .subheader__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5405,6 +5425,7 @@ template {
   min-height: 440px;
   background: url("../img/main_bg.jpg") center center/cover no-repeat;
   position: relative;
+  padding-top: 151px;
 }
 
 .promo__wrapper {
@@ -5905,17 +5926,13 @@ template {
 }
 
 .exibitors__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (minmax(320px, auto))[2];
+  -ms-grid-columns: (263px)[4];
+      grid-template: repeat(2, minmax(320px, auto))/repeat(4, 263px);
+  grid-auto-rows: minmax(320px, auto);
+  gap: 72px 21px;
 }
 
 .exibitors__item {
@@ -5950,7 +5967,7 @@ template {
 
 .exibitors__item_text {
   margin-top: 17px;
-  width: 263px;
+  width: 261px;
   font-size: 15px;
 }
 

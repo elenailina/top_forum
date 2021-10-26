@@ -27,6 +27,16 @@ $(document).ready(function(){
     });
 });
 
+
+$(document).ready(function(){
+    $("#menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top-151}, 1500);
+    });
+});
+
 const sponsors = document.querySelector('.sponsors');
 sponsors.addEventListener('click', () => {
     menu.classList.add('display: block');

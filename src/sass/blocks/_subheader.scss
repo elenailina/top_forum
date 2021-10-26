@@ -1,4 +1,14 @@
 .subheader{
+    min-height: 95px;
+    background-color: #fff;
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        width: 1920px;
+        height: 1px;
+        background-color: rgba(50, 50, 50, 0.2);
+    }
     &__wrapper {
         display: flex;
         min-height: 93px;

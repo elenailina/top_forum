@@ -1,3 +1,8 @@
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
 .header {
     background-color: #323232;
     &__wrapper {
