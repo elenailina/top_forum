@@ -1,0 +1,55 @@
+.speakers {
+    min-height: 1200px;
+    padding: 51px 0 68px 0;
+    font-size: 17px;
+    font-weight: 300;
+    color: #323232;
+    text-align: justify;
+    text-align-last: center;
+    &__descr {
+        margin-top: 22px;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template: repeat(2, minmax(320px, auto)) / repeat(4, 263px);
+        grid-auto-rows: minmax(320px, auto);
+        gap: 0 21px;
+    }
+    &__item {
+        width: 263px;
+        margin-top: 65px;
+        &_img {
+            display: block;
+            margin: 0 auto;
+            margin-top: 21px;
+            position: relative;
+            width: 151px;
+            height: 151px;
+            background-color: #ffffff;
+            border: 1px solid #f3ebda;
+            border-radius: 100%;
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 133px;
+                height: 133px;
+                border-radius: 100%; 
+            }
+        }
+        &_name {
+            margin-top: 18px;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+        &_text {
+            margin-top: 29px;
+            width: 261px;
+            font-size: 15px;
+        }
+        &_btn {
+            margin-top: 16px;
+        }
+    }
+}

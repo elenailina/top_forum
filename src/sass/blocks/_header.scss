@@ -17,7 +17,7 @@ header {
         &-item {
             position: relative;
             &:hover {
-                .header__submenu__sponsors, .header__submenu__exhibitors {
+                .header__submenu__sponsors, .header__submenu__exhibitors, .header__submenu__speakers {
                     visibility: visible;
                     opacity: 1;
                     display: block;
@@ -60,7 +60,7 @@ header {
         display: flex;
         justify-content: flex-end;
     }
-    &__submenu__sponsors, &__submenu__exhibitors {
+    &__submenu__sponsors, &__submenu__exhibitors, &__submenu__speakers {
         visibility: hidden;
         opacity: 0;
         position: absolute;
@@ -106,7 +106,7 @@ header {
             background-color: #d6d6d6;
         }
     }
-    &__submenu__exhibitors {
+    &__submenu__exhibitors, &__submenu__speakers {
         height: 146px;
     }
 }
