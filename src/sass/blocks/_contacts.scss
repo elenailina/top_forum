@@ -1,0 +1,41 @@
+.contacts {
+    min-width: 545px;
+    padding: 34px 0 71px 0;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 750px 360px;
+        column-gap: 30px;
+    }
+    &__map {
+        width: 750px;
+        height: 440px;
+    }
+    &__item {
+        margin-bottom: 28px;
+        width: 360px;
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: 300;
+        text-transform: none;
+        color: #323232;
+        &_dep {
+            margin-top: 8px;
+            font-weight: 500;
+        }
+        &_name {
+            font-weight: 400;
+        }
+        &_email span {
+            text-decoration: underline;
+            color: $main-color;
+        }
+        a {
+            margin-top: 10px;
+            font-size: 15px;
+            line-height: 20px;
+            font-weight: 300;
+            text-transform: none;
+            color: #323232;
+        }
+    }
+}
