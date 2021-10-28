@@ -1,4 +1,5 @@
 .button {
+    width: 153px;
     font-size: 13px;
     line-height: 24px;
     font-weight: 400;
@@ -8,7 +9,6 @@
         outline: none;
     }
     &_club {
-        width: 153px;
         height: 38px;
         background-color: #e8d8b6;
         font-size: 12px;
@@ -17,10 +17,14 @@
         color: #323232;
     }
     &_register {
-        width: 153px;
         height: 42px;
         background-color: #c99c47;
-        font-family: Roboto;
+    }
+    a {
+        font-size: 13px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #ffffff;
     }
     &_more {
         width: 120px;
@@ -28,8 +32,36 @@
         background-color: #d4c198;
     }
     &_subscribe {
-        width: 153px;
         height: 42px;
         background-color: #323232;
+    }
+    &_payment {
+        margin-top: 13px;
+        width: 103px;
+        height: 50px;
+        background-color: #f2ead8;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: #323232;
+        a {
+            font-size: 14px;
+            line-height: 16px;
+            font-weight: 900;
+            text-transform: uppercase;
+            color: #323232;
+            &:hover {
+                text-decoration: none;
+            } 
+        }
+        &:hover {
+            background-color: #e2cc9d;
+        }
+    }
+    &_submit {
+        width: 112px;
+        height: 42px;
+        background-color: #c99c47;
     }
 }

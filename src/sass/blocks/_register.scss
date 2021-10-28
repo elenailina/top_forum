@@ -1,0 +1,83 @@
+.register {
+    min-height: 1560px;
+    padding: 50px 242px 43px 242px;
+    &__steps {
+        margin-top: 39px;
+    }
+    &__step {
+        display: block;
+        margin: 0 auto;
+        width: 414px;
+        height: 58px;
+        background-color: #ffffff;
+        border: 2px solid #c99c47;
+        text-align: center;
+        font-size: 14px;
+        line-height: 58px;
+        font-weight: 500;
+        color: $main-color;
+    }
+    &__img {
+        margin: 8px 0;
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    &__form {
+        padding: 50px 243px 43px 195px;
+        label {
+            font-family: Roboto;
+            font-size: 14px;
+            line-height: 50px;
+            font-weight: 500;
+            color: #606060;
+        }
+        input, select {
+            width: 427px;
+            height: 50px;
+            background-color: #ffffff;
+            border: 1px solid #e8d8b6;
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 300;
+            color: #606060;
+        }
+        select {
+            &:focus-visible {
+                outline: none;
+            }
+        }
+    }
+    &__item {
+        display: grid;
+        grid-template-columns: 209px 427px;
+        margin-top: 11px;
+    }
+    &__policy {
+        grid-column: 2;
+        margin-top: 46px;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 300;
+        color: #606060;
+        input {
+            width: 20px;
+            height: 19px;
+            background-color: #ffffff;
+            border: 1px solid #e8d8b6;
+            margin-right: 9px;
+        }
+        a {
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 300;
+            text-decoration: underline;
+            color: #606060;
+        }
+    }
+    &__btn {
+        margin-top: 34px;
+        margin-left: 108px;
+    }
+}

@@ -146,7 +146,7 @@
                             <div class="col-md-2 offset-md-4">
                                 <div class="subheader__btn">
                                     <button class="button button_register">
-                                        REGISTER NOW
+                                        <a href="#register">REGISTER NOW</a>
                                     </button>
                                 </div>
                             </div>
@@ -287,11 +287,11 @@
                     <div class="future__btns">
                         <div class="future__btns__register">
                             <button class="button button_register">
-                                REGISTER NOW
+                                <a href="#register">REGISTER NOW</a>
                             </button>
                         </div>
                         <div>
-                            <button class="button button_subscribe">
+                            <button class="button button_subscribe" data-modal="subscribe">
                                 SUBSCRIBE
                             </button>
                         </div>
@@ -915,6 +915,98 @@
         </div>
     </footer>
     
+    <div id="register" class="register">
+        <div class="container">
+            <div class="title">2  EASY STEPS TO REGISTER</div>
+            <div class="register__steps">
+                <div class="register__step">FILL IN THE FORM IN ENGLISH</div>
+                <div class="register__img">
+                    <img src="icons/arrow.svg" alt="arrow">
+                </div>
+                <div class="register__step">READ THOROUGHLY TERMS&CONDITIONS</div>
+            </div>
+            <form class="register__form" action="#">
+                <div class="register__item">
+                    <label for="forum">Please, choose a conference:</label>
+                    <select name="forum" id="forum">
+                        <option value="Wealth TOP FORUM Israel 2016">Wealth TOP FORUM Israel 2016</option>
+                        <option value="Another name of the conference">Another name of the conference</option>
+                        <option value=Another name of the conference 2016">Another name of the conference 2016</option>
+                    </select>
+                </div>
+                <div class="register__item">
+                    <label for="forum">Name:</label>
+                    <input name="name" required type="text">
+                </div>
+                <div class="register__item">
+                    <label for="forum">Surname:</label>
+                    <input name="surname" required type="text">
+                </div>
+                <div class="register__item">
+                    <label for="forum">Company Name:</label>
+                <input name="company_name" required type="text">
+                </div>
+                <div class="register__item">
+                    <label for="forum">Business Area:</label>
+                    <select name="business_area" id="forum">
+                        <option value="Forex companies">Forex companies</option>
+                        <option value="Another companies">Another companies</option>
+                    </select>
+                </div>
+                <div class="register__item">
+                    <label for="forum">E-mail (for organizers):</label>
+                    <input name="email" type="email">
+                </div>
+                <div class="register__item">
+                    <label for="forum">E-mail (for sponsors):</label>
+                    <input name="email" type="email">
+                </div>
+                <div class="register__item">
+                    <label for="forum">Mobile Number (for organizers):</label>
+                    <input name="phone" type="phone">
+                </div>
+                <div class="register__item">
+                    <label for="forum">Country:</label>
+                    <input name="country" type="text">
+                </div>
+                <div class="register__item">
+                    <label for="forum">Web-site:</label>
+                    <input name="web_site" type="text">
+                </div>
+                <div class="register__item">
+                    <label for="forum">Method of payment</label>
+                    <div>
+                        <button class="button button_payment"><a href="#">free</a></button>
+                    <button class="button button_payment"><a href="#"><img src="icons/payment/visa.svg" alt="visa"></a></button>
+                    <button class="button button_payment"><a href="#">Invoice</a></button>
+                    <button class="button button_payment"><a href="#"><img src="icons/payment/paypal.svg" alt="paypal"></a></button>
+                    </div>
+                </div>
+                <div class="register__item">
+                    <div class="register__policy">
+                        <input required type="checkbox">
+                        <span>I accept <a href="/policy.html">Terms&Conditions</a></span>
+                        <button class="button button_submit register__btn">SUBMIT</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="overlay">
+        <div class="modal" id="subscribe">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">SUBSCRIBE</div>
+            <div class="modal__descr">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+            <form class="feed-form" action="#">
+                <input name="name" placeholder="Name and surname" type="text">
+                <input name="company_name" placeholder="Company name">
+                <input name="email" placeholder="E-mail" type="email">
+                <button class="button button_submit">SUBSCRIBE</button>
+            </form>
+        </div>
+    </div>
+
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
