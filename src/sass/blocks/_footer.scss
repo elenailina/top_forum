@@ -7,6 +7,13 @@
         line-height: 22px;
         font-weight: 400;
         color: $main-color;
+        &_follow {
+            cursor: pointer;
+            &:hover {
+                text-decoration: underline;
+            }
+            
+        } 
     }
     &__menu {
         margin-top: 16px;

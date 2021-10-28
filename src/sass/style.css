@@ -5170,12 +5170,6 @@ template {
   margin: 0 auto;
 }
 
-header {
-  position: fixed;
-  width: 100%;
-  z-index: 1000;
-}
-
 .header {
   background-color: #323232;
 }
@@ -5252,6 +5246,8 @@ header {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
 
 .header__submenu__sponsors, .header__submenu__exhibitors, .header__submenu__speakers {
@@ -5318,9 +5314,10 @@ header {
 .subheader::after {
   content: '';
   position: absolute;
-  width: 1920px;
-  height: 1px;
+  width: 100%;
+  height: 2px;
   background-color: rgba(50, 50, 50, 0.2);
+  margin-bottom: 0;
 }
 
 .subheader__wrapper {
@@ -5463,7 +5460,7 @@ header {
   min-height: 440px;
   background: url("../img/main_bg.jpg") center center/cover no-repeat;
   position: relative;
-  padding-top: 151px;
+  padding-top: 50px;
 }
 
 .promo__wrapper {
@@ -6213,7 +6210,7 @@ header {
 }
 
 .register {
-  min-height: 1560px;
+  min-height: 1400px;
   padding: 50px 242px 43px 242px;
 }
 
@@ -6256,7 +6253,7 @@ header {
   color: #606060;
 }
 
-.register__form input, .register__form select {
+.register__form input, .register__form select, .register__form option {
   width: 427px;
   height: 50px;
   background-color: #ffffff;
@@ -6310,6 +6307,10 @@ header {
   margin-left: 108px;
 }
 
+#register {
+  display: none;
+}
+
 .overlay {
   display: none;
   position: fixed;
@@ -6317,7 +6318,7 @@ header {
   height: 100%;
   top: 0;
   background-color: rgba(0, 0, 0, 0.4);
-  z-index: 1001;
+  z-index: 10;
 }
 
 .modal {
@@ -6332,7 +6333,6 @@ header {
   border: 2px solid #c99c47;
   padding: 36px 29px 31px 29px;
   margin-top: 80px;
-  z-index: 1002;
 }
 
 .modal__close {
@@ -6403,6 +6403,14 @@ header {
   line-height: 22px;
   font-weight: 400;
   color: #c99c47;
+}
+
+.footer__title_follow {
+  cursor: pointer;
+}
+
+.footer__title_follow:hover {
+  text-decoration: underline;
 }
 
 .footer__menu {
@@ -6478,5 +6486,120 @@ hr {
   height: 1px;
   background-color: rgba(255, 255, 255, 0.1);
   border: none;
+}
+
+.pageup {
+  display: none;
+  position: fixed;
+  bottom: 50%;
+  right: 160px;
+  width: 42px;
+  height: 42px;
+}
+
+.page-detail {
+  min-height: 1513px;
+  padding: 50px 0 68px 0;
+}
+
+.page-detail__descr, .page-detail__more {
+  margin-top: 22px;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #323232;
+  text-align: justify;
+  text-align-last: center;
+}
+
+.page-detail__img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 46px;
+  width: 518px;
+  height: 317px;
+  background-color: #ffffff;
+  border: 1px solid #f3ebda;
+}
+
+.page-detail__img img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 46px;
+  width: 258px;
+  height: 223px;
+}
+
+.page-detail__articles {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (360px)[2];
+      grid-template-columns: repeat(2, 360px);
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.page-detail__articles img {
+  border: 1px solid #f3ebda;
+}
+
+#page-detail {
+  display: none;
+}
+
+.page-speaker {
+  min-height: 1513px;
+  padding: 50px 0 68px 0;
+}
+
+.page-speaker__descr, .page-speaker__more {
+  margin-top: 22px;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #323232;
+  text-align: justify;
+  text-align-last: center;
+}
+
+.page-speaker__img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 49px;
+  width: 327px;
+  height: 327px;
+  border: 1px solid #f3ebda;
+  border-radius: 100%;
+}
+
+.page-speaker__img img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 19px;
+  width: 289px;
+  height: 289px;
+}
+
+.page-speaker__articles {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (360px)[2];
+      grid-template-columns: repeat(2, 360px);
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.page-speaker__articles img {
+  border: 1px solid #f3ebda;
+}
+
+#page-speaker {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,5 +1,5 @@
 .register {
-    min-height: 1560px;
+    min-height: 1400px;
     padding: 50px 242px 43px 242px;
     &__steps {
         margin-top: 39px;
@@ -33,7 +33,7 @@
             font-weight: 500;
             color: #606060;
         }
-        input, select {
+        input, select, option {
             width: 427px;
             height: 50px;
             background-color: #ffffff;
@@ -80,4 +80,8 @@
         margin-top: 34px;
         margin-left: 108px;
     }
+}
+
+#register {
+    display: none;
 }

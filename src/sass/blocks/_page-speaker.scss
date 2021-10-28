@@ -1,0 +1,42 @@
+.page-speaker {
+    min-height: 1513px;
+    padding: 50px 0 68px 0;
+    &__descr, &__more {
+        margin-top: 22px;
+        font-size: 17px;
+        line-height: 30px;
+        font-weight: 300;
+        color: #323232;
+        text-align: justify;
+        text-align-last: center;
+    }
+    &__img {
+        display: block;
+        margin: 0 auto;
+        margin-top: 49px;
+        width: 327px;
+        height: 327px;
+        border: 1px solid #f3ebda;
+        border-radius: 100%;
+        img {
+            display: block;
+            margin: 0 auto;
+            margin-top: 19px;
+            width: 289px;
+            height: 289px;
+        }
+    }
+    &__articles {
+        display: grid;
+        grid-template-columns: repeat(2, 360px);
+        column-gap: 30px;
+        justify-content: center;
+        img {
+            border: 1px solid #f3ebda;
+        }
+    }
+}
+
+#page-speaker {
+    display: none;
+}

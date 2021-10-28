@@ -25,11 +25,43 @@ $(document).ready(function(){
         prevArrow: '<button type="button" class="prev"><img src="icons/left_white.svg"></button>',
         nextArrow: '<button type="button" class="next"><img src="icons/right_white.svg"></button>',
     });
-});
 
-$('[data-modal=subscribe]').on('click', function() {
-    $('.overlay, #subscribe').fadeIn('slow');
-});
-$('.modal__close').on('click', function(){
-    $('.overlay, #subscribe').fadeOut('slow');
+
+    $('[data-modal=subscribe]').on('click', function() {
+        $('.overlay, #subscribe').fadeIn('slow');
+    });
+    $('.modal__close').on('click', function(){
+        $('.overlay, #subscribe').fadeOut('slow');
+    });
+
+    $('[data-modal=register]').on('click', function() {
+        $('#register').fadeIn('slow');
+        $('#promo, #future, #reviews, #promo-video, #clients, #sponsors, #exibitors, #speakers, #articles, #contacts').fadeOut('fast');
+    });
+
+    $('[data-modal=page-detail]').on('click', function() {
+        $('#page-detail').fadeIn('slow');
+        $('#promo, #future, #reviews, #promo-video, #clients, #sponsors, #exibitors, #speakers, #articles, #contacts').fadeOut('fast');
+        $(window).scrollTop(-500);
+    });
+
+    $('[data-modal=page-speaker]').on('click', function() {
+        $('#page-speaker').fadeIn('slow');
+        $('#promo, #future, #reviews, #promo-video, #clients, #sponsors, #exibitors, #speakers, #articles, #contacts').fadeOut('fast');
+        $(window).scrollTop(-500);
+    });
+
+    $(window).scroll(function(){
+        if($(this).scrollTop() > 500) {
+            $('.pageup').fadeIn();
+        }else {
+            $('.pageup').fadeOut();
+        }
+    });
+
+    $("a[href=#menu]").click(function(){
+        const _href = $(this).attr("href");
+        $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+        return false;
+    });
 });

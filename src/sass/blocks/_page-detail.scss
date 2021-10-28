@@ -1,0 +1,42 @@
+.page-detail {
+    min-height: 1513px;
+    padding: 50px 0 68px 0;
+    &__descr, &__more {
+        margin-top: 22px;
+        font-size: 17px;
+        line-height: 30px;
+        font-weight: 300;
+        color: #323232;
+        text-align: justify;
+        text-align-last: center;
+    }
+    &__img {
+        display: block;
+        margin: 0 auto;
+        margin-top: 46px;
+        width: 518px;
+        height: 317px;
+        background-color: #ffffff;
+        border: 1px solid #f3ebda;
+        img {
+            display: block;
+            margin: 0 auto;
+            margin-top: 46px;
+            width: 258px;
+            height: 223px;
+        }
+    }
+    &__articles {
+        display: grid;
+        grid-template-columns: repeat(2, 360px);
+        column-gap: 30px;
+        justify-content: center;
+        img {
+            border: 1px solid #f3ebda;
+        }
+    }
+}
+
+#page-detail {
+    display: none;
+}
