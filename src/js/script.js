@@ -50,6 +50,11 @@ $(document).ready(function(){
         $('#promo, #future, #reviews, #promo-video, #clients, #sponsors, #exibitors, #speakers, #articles, #contacts').fadeOut('fast');
         $(window).scrollTop(-500);
     });
+    $('[data-modal=events]').on('click', function() {
+        $('#events').fadeIn('slow');
+        $('#promo, #future, #reviews, #promo-video, #clients, #sponsors, #exibitors, #speakers, #articles, #contacts').fadeOut('fast');
+        $(window).scrollTop(-500);
+    });
 
     $(window).scroll(function(){
         if($(this).scrollTop() > 500) {
