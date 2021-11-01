@@ -7,7 +7,18 @@ $(document).ready(function(){
         adaptiveHeight: true,
         prevArrow: '<button type="button" class="prev"><img src="icons/left.svg"></button>',
         nextArrow: '<button type="button" class="next"><img src="icons/right.svg"></button>',
+        responsive: [
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode: true
+                }
+            }
+        ]
     });
+
     $('.clients__wrapper').slick({
         infinite: true,
         slidesToShow: 6,
@@ -15,17 +26,18 @@ $(document).ready(function(){
         speed: 1200,
         prevArrow: '<button type="button" class="prev"><img src="icons/left.svg"></button>',
         nextArrow: '<button type="button" class="next"><img src="icons/right.svg"></button>',
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    dots: true,
+                    arrows: false
+                }
+            }
+        ]
     });
-    $('.promo__wrapper').slick({
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        speed: 1200,
-        adaptiveHeight: false,
-        prevArrow: '<button type="button" class="prev"><img src="icons/left_white.svg"></button>',
-        nextArrow: '<button type="button" class="next"><img src="icons/right_white.svg"></button>',
-    });
-
 
     $('[data-modal=subscribe]').on('click', function() {
         $('.overlay, #subscribe').fadeIn('slow');

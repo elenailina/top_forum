@@ -1,0 +1,91 @@
+@media (min-width: 992px) and (max-width: 1200px ){
+    .pageup {
+        left: 930px;
+    }
+    .subheader__link {
+        margin-left: 24px;
+        font-size: 14px;
+    }
+    .reviews {
+        &__wrapper {
+            justify-content: space-evenly;
+        }
+        .prev {
+            left: 37px;
+        }
+        .next {
+            right: 50px;
+        }
+        &__about {
+            padding-left: 23px;
+            justify-content: center;
+        }
+        &__subtitle, &__date, &__descr {
+            display: block;
+            margin: 6px auto;
+        }
+        &__slide {
+            flex-direction: column;
+        }
+        &__img {
+            display: block;
+            margin: 0 auto;
+            width: auto; 
+            max-width: 100%;
+        }
+    }
+    .sponsors__wrapper {
+        padding: 0 20px;
+    }
+    .promo-video {
+        padding: 60px 0px;
+    }
+    .clients {
+        &__slide, .slick-slide {
+            width: 100px;
+        }
+        &__img {
+            display: block;
+            margin: 0 auto;
+            width: auto; 
+            max-width: 100%;
+        }
+        .prev {
+            left: 0px;
+        }
+        .next {
+            right: 0px;
+        }
+    }
+    .exibitors {
+        &__wrapper {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    .speakers__wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .articles__wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .register, .register__form {
+        padding: 50px 0 43px 0;
+    }
+    .contacts {
+        &__wrapper {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        &__map {
+            width: 100%;
+        }
+        &__item {
+            width: 100%;
+        }
+        iframe {
+            width: 600px;
+        }
+    }
+    .events__item {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

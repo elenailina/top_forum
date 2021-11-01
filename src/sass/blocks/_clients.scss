@@ -37,4 +37,27 @@
         right: -31px;
         left: auto;
     }
+    .slick-dots {
+        text-align: center;
+        display: flex; // поставить кнопки в ряд
+        justify-content: center; // выровнять по центру
+        list-style: none;
+        position: absolute;
+        bottom: -70px;
+        left: 50%;
+        transform: translateX(-50%);
+        button {
+            background: #eddfd477;
+            border: 1px solid $main-color; 
+            border-radius: 50%; 
+            height: 15px; 
+            width: 15px; 
+            margin: 5px;
+            outline: none;
+            font-size: 0;
+        }
+        li[class="slick-active"] button {
+            background: $main-color;
+        }
+    }
 }
