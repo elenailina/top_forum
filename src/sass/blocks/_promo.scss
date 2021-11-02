@@ -28,8 +28,8 @@
         position: absolute;
         justify-content: center;
         padding: 26px 11px;
-        min-width: 105px;
-        min-height: 128px;
+        width: 105px;
+        height: 128px;
         background-color: #ffffff;
         border: 1px solid #c99c47;
         font-size: 29px;
@@ -77,22 +77,5 @@
         font-weight: 300;
         text-transform: none;
         color: #757575;
-    }
-    .prev, .next {
-        position: absolute;
-        top: 63px;
-        border: none;
-        color: #fff;
-        background-color: rgba(255, 255, 255, 0);
-        &:focus {
-            outline: none;
-        }
-    }
-    .prev {
-        right: 455px;
-    }
-    .next {
-        right: -39px;
-        left: auto;
     }
 }

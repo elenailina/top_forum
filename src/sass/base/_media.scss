@@ -60,16 +60,22 @@
     .exibitors {
         &__wrapper {
             grid-template-columns: repeat(3, 1fr);
+            place-items: center center;
         }
     }
     .speakers__wrapper {
         grid-template-columns: repeat(3, 1fr);
+        place-items: center center;
     }
     .articles__wrapper {
         grid-template-columns: repeat(2, 1fr);
+        place-items: center center;
     }
     .register, .register__form {
         padding: 50px 0 43px 0;
+        &__item {
+            grid-template-columns: 260px 1fr;
+        }
     }
     .contacts {
         &__wrapper {
@@ -87,5 +93,264 @@
     }
     .events__item {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 991px) {
+    .title {
+        font-size: 20px;
+    }
+    .button {
+        font-size: 12px;
+        line-height: 24px;
+        font-weight: 400;
+        width: 115px;
+        &_payment {
+            width: 82px;
+            height: 46px;
+            a {
+            font-size: 12px;
+            }
+        }
+    }
+    .subheader{
+        min-height: 73px;
+        &__wrapper {
+            min-height: 70px;
+        }
+        &__items {
+            margin-top: 13px;
+        }
+        &__link {
+            margin-left: 24px;
+            font-size: 13px;
+        }
+        &__btn {
+            margin-top: 13px;
+        }
+    }
+    .promo{
+        &__wrapper {
+            width: 317px;
+            height: 159px;
+            padding: 15px 10px;
+            &::before {
+                width: 335px;
+                height: 177px;
+                left: -176px;
+            }
+        }
+        &__date {
+            width: 93px;
+            height: 118px;
+            font-size: 24px;
+            line-height: 23px;
+            padding: 20px 9px;
+            span {
+                font-size: 15px;
+                line-height: 23px;
+            }
+            span.fz34 {
+                font-size: 28px;
+                line-height: 23px;
+            }
+        }
+        &__about {
+            right: 20px;
+            width: 180px;
+            height: 80px;
+        }
+        &__title {
+            font-size: 12px;
+            line-height: 17px;
+        }
+        &__descr {
+            margin-top: 7px;
+            font-size: 11px;
+            line-height: 15px;
+        }
+        &__location {
+            margin-top: 5px;
+            font-size: 11px;
+        }
+    }
+    .future {
+        padding: 45px 15px;
+        &__img img {
+            &::before {
+                width: 145px;
+                height: 145px;
+            }
+        }
+        &__item, #delegate_img  {
+            margin: 50px 0 0 0;
+        }
+        &__about {
+            justify-content: center;
+        }
+        &__title {
+            font-size: 14px;
+            margin-top: 40px;
+        }
+        &__text {
+            font-size: 14px;
+        }
+        &__descr {
+            min-height: 55px;
+            margin-top: 13px;
+            font-size: 13px;
+            line-height: 21px;
+        }
+        &__btn {
+            margin-top: 0;
+        }
+        &__btns {
+            margin-top:19px;
+        }
+    }
+    .reviews {
+        &__slide {
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+    }
+    .promo-video {
+        min-height: 488px;
+        padding: 60px 0px;
+        iframe {
+            width: 500px;
+            height: 300px;
+        }
+    }
+    .sponsors__wrapper {
+        padding: 0;
+    }
+    .exibitors {
+        &__wrapper {
+            grid-template-columns: repeat(2, 1fr);
+            place-items: center center;
+        }
+        &__item {
+            margin-top: 38px;
+        }
+    }
+    .speakers__wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center center;
+    }
+    .articles{
+        &__wrapper {
+            grid-template-columns: repeat(2, 1fr);
+            place-items: center center;
+        }
+        &__item {
+            width: 320px;
+            margin-top: 40px;
+            &_img {
+                width: 320px;
+            }
+        }
+    }
+    .contacts {
+        padding-bottom: 20px;
+        &__wrapper {
+            grid-template-columns: 1fr;
+            place-items: center center;
+        }
+        &__map {
+            width: 100%;
+            padding: 0 30px;
+        }
+        &__items {
+            margin-top: 30px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        &__item {
+            padding-left: 30px;
+        } 
+        iframe {
+            width: 100%;
+        }
+    }
+    .register {
+        padding: 20px 0 20px 0;
+        min-height: 1100px;
+        &__form {
+            padding: 20px 0 20px 0;  
+        }
+        &__item {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        &__policy {
+            grid-column: 1 / 3;
+            margin-top: 0;
+            input {
+                width: 14px;
+                height: 14px;
+            }
+        }
+    }
+    .page-detail, .page-speaker {
+        padding: 20px 0;
+        &__descr, &__more {
+            font-size: 14px; 
+        }
+        font-size: 14px;
+        &__img {
+            margin-top: 13px;
+            width: 50%;
+            height: 50%;
+            img {
+                margin-top: 13px;
+                width: 50%;
+                height: 50%;
+            }
+        }
+        &__articles {
+            grid-template-columns: repeat(2, 1fr);
+            place-items: center center;
+        }
+    }
+    .events{
+        &__descr {
+            font-size: 14px; 
+        }
+        &__item {
+            grid-template-columns: repeat(2, 1fr);
+            margin-top: 30px;
+            &-descr {
+                font-size: 13px;
+            }
+        }
+    }
+    .footer {
+        padding: 25px 0;
+        min-height: 323px;
+    }
+    .modal {
+        width: 321px;
+        top: 30%;
+        &__subtitle {
+            font-size: 14px;
+        }
+        &__descr {
+            margin-top: 13px;
+            font-size: 13px;
+        }
+    }
+    .feed-form {
+        margin-top: 15px;
+        input {
+            width: 264px;
+            font-size: 12px;
+        }
+    }
+    .pageup {
+        bottom: 30%;
+        right: 25px;
+        width: 35px;
+        height: 35px;
     }
 }
