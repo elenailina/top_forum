@@ -117,4 +117,10 @@ window.addEventListener('DOMContentLoaded', () => {
             menu.classList.toggle('header__menu_active');
         });
     });
+
+    $('.button_subscribe').on('click', function() {
+        $('.overlay, #subscribe').fadeIn('slow');
+    });
+    
+
 });

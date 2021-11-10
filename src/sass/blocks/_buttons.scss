@@ -1,35 +1,48 @@
 .button {
     width: 153px;
+    height: 42px;
     font-size: 13px;
     line-height: 24px;
     font-weight: 400;
     color: #ffffff;
     border: none;
+    text-align: center;
+    padding: 8px 26px;
+    cursor: pointer;
+    &:hover {
+        text-decoration: none;
+        color: #ffffff;
+    }
     &:focus {
         outline: none;
-    }
-    &_club {
-        height: 38px;
-        background-color: #e8d8b6;
-        font-size: 12px;
-        line-height: 24px;
-        font-weight: 400;
-        color: #323232;
-    }
-    &_register {
-        height: 42px;
-        background-color: #c99c47;
     }
     a {
         font-size: 13px;
         line-height: 24px;
         font-weight: 400;
         color: #ffffff;
+        text-decoration: none;
+    }
+    &_club {
+        height: 38px;
+        background-color: #e8d8b6;
+        a {
+            font-size: 12px;
+            line-height: 24px;
+            font-weight: 400;
+            color: #323232;
+        }
+    }
+    &_register {    
+        padding: 9px 30px;
+        height: 42px;
+        background-color: #c99c47;
     }
     &_more {
         width: 120px;
         height: 38px;
         background-color: #d4c198;
+        padding: 7px;
     }
     &_subscribe {
         height: 42px;
@@ -45,6 +58,7 @@
         font-weight: 900;
         text-transform: uppercase;
         color: #323232;
+        padding-top: 16px;
         a {
             font-size: 14px;
             line-height: 16px;
